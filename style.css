@@ -1,0 +1,111 @@
+/* Reset some default styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #ff6f61, #d4a5a5);
+}
+
+/* Container for game elements */
+.container {
+    text-align: center;
+}
+
+/* Heading styling */
+.heading {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #FF6347; /* Tomato color */
+    background: linear-gradient(45deg, #FF6347, #FFD700); /* Gradient from Tomato to Gold */
+    -webkit-background-clip: text; /* For WebKit browsers */
+    background-clip: text; /* Standard property for other browsers */
+    -webkit-text-fill-color: transparent; /* Makes text color transparent to show gradient */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow to enhance text clarity */
+    margin-bottom: 20px;
+}
+
+/* Board styling */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 8px; /* Adjusted for sharper appearance */
+    margin: 20px auto;
+}
+
+/* Cell styling */
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #222; /* Dark background for cells */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem; /* Slightly smaller font for better fit */
+    cursor: pointer;
+    border-radius: 5px; /* Slightly reduced border-radius for sharper look */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow for better definition */
+}
+
+/* X and O colors */
+.cell.x {
+    color: #FFA500; /* Orange color for X */
+}
+
+.cell.o {
+    color: #FFA500; /* Orange color for O */
+}
+
+.cell:hover {
+    background-color: #333; /* Slightly lighter background on hover */
+    transform: scale(1.05); /* Slightly enlarges the cell on hover */
+}
+
+/* Status text styling */
+.status {
+    font-size: 1.25rem; /* Slightly smaller font size for better readability */
+    font-weight: bold;
+    color: #fff; /* White text color */
+    background-color: #444; /* Darker background for status for improved contrast */
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow for better definition */
+}
+
+/* Reset button styling */
+.reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow for better definition */
+}
+
+.reset-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+    
+
+  
+
+
+
+
